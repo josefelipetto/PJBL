@@ -8,6 +8,7 @@ from Interpoladores.Newton import Newton
 from IntegracaoNumerica.Trapezio import Trapezio
 from IntegracaoNumerica.SimpsonOneEighth import SimpsonOneEigth
 from IntegracaoNumerica.SimpsonThreeEighth import SimpsonThreeEigth
+from EDO.RungeKutta import RungeKutta
 
 if __name__ == "__main__":
     menu = Menu.Menu()
@@ -55,4 +56,5 @@ if __name__ == "__main__":
             print("A integral é: ", metodo.calculate())
     elif menu.getSubject() == 5:
         if menu.getMethod() == 1:
-            print('Runge Gitta')
+            metodo = RungeKutta()
+            metodo.calculate()

@@ -8,7 +8,15 @@ class Newton:
         print("Valores de x: ", self.x)
         print("Valores de y: ", self.fx)
 
+    def checkRepeated(self):
+        repeated = set([x for x in self.x if self.x.count(x) > 1])
+        return len(repeated) > 0
+
     def calculate(self):
+
+        if self.checkRepeated():
+            print("Há valores repetidos no vetor X. Verifique. ")
+            return
 
         tabela = [[0] * len(self.x)] * len(self.x)
 
