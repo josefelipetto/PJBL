@@ -5,6 +5,9 @@ from Raizes.MetodoDasSecantes import MetodoDasSecantes
 from EquacoesLineares.Gauss import Gauss
 from Interpoladores.Lagrange import Lagrange
 from Interpoladores.Newton import Newton
+from IntegracaoNumerica.Trapezio import Trapezio
+from IntegracaoNumerica.SimpsonOneEighth import SimpsonOneEigth
+from IntegracaoNumerica.SimpsonThreeEighth import SimpsonThreeEigth
 
 if __name__ == "__main__":
     menu = Menu.Menu()
@@ -42,11 +45,14 @@ if __name__ == "__main__":
             metodo.calculate()
     elif menu.getSubject() == 4:
         if menu.getMethod() == 1:
-            print('Trpezio')
+            metodo = Trapezio()
+            print("A integral é: ", metodo.calculate())
         elif menu.getMethod() == 2:
-            print('1/3')
+            metodo = SimpsonOneEigth()
+            print("A integral é: ", metodo.calculate())
         elif menu.getMethod() == 3:
-            print('3/8')
+            metodo = SimpsonThreeEigth()
+            print("A integral é: ", metodo.calculate())
     elif menu.getSubject() == 5:
         if menu.getMethod() == 1:
             print('Runge Gitta')

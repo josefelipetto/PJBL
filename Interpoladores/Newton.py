@@ -10,21 +10,21 @@ class Newton:
 
     def calculate(self):
 
-        graph_tree = [[0] * len(self.x)] * len(self.x)
+        tabela = [[0] * len(self.x)] * len(self.x)
 
         result = 0
 
         for i in range(len(self.x)):
             for j in range(len(self.x) - i):
                 if i == 0:
-                    graph_tree[i][j] = self.fx[j]
+                    tabela[i][j] = self.fx[j]
                 else:
-                    graph_tree[i][j] = (graph_tree[i - 1][j + 1] - graph_tree[i - 1][j]) / (self.x[j + i] - self.x[j])
+                    tabela[i][j] = (tabela[i - 1][j + 1] - tabela[i - 1][j]) / (self.x[j + i] - self.x[j])
 
         for i in range(len(self.x)):
             temp = 1
             for j in range(i):
                 temp *= (self.val - self.x[j])
-            result += temp * graph_tree[i][0]
+            result += temp * tabela[i][0]
 
         print("O f({}) onde {} é o valor a ser interpolado é".format(self.val, self.val), round(result, 4))

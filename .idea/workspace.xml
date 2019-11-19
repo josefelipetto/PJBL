@@ -2,11 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="42316a20-e9a9-4512-b3a7-c3c7750258c8" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Interpoladores/Lagrange.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Interpoladores/Newton.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/IntegracaoNumerica/SimpsonOneEighth.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/IntegracaoNumerica/SimpsonThreeEighth.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/IntegracaoNumerica/Trapezio.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PjBL.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Interpoladores/Newton.py" beforeDir="false" afterPath="$PROJECT_DIR$/Interpoladores/Newton.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -29,8 +29,13 @@
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/IntegracaoNumerica" />
     <property name="settings.editor.selected.configurable" value="Errors" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/IntegracaoNumerica" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -91,7 +96,8 @@
       <workItem from="1570485151577" duration="626000" />
       <workItem from="1573435147220" duration="1544000" />
       <workItem from="1573509859659" duration="1419000" />
-      <workItem from="1574036793193" duration="1092000" />
+      <workItem from="1574036793193" duration="1423000" />
+      <workItem from="1574121366145" duration="2367000" />
     </task>
     <servers />
   </component>
@@ -112,6 +118,6 @@
     </option>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/CalculoNumerico$main.coverage" NAME="main Coverage Results" MODIFIED="1574037570421" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/CalculoNumerico$main.coverage" NAME="main Coverage Results" MODIFIED="1574123432465" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>
